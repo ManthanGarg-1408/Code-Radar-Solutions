@@ -2,9 +2,7 @@
 
 
 int main() {
-    char name[];
-    int age;
-    char hobby[];
+    char name[],int age,char hobby[];
     scanf("%s",&name);
     scanf("%d",&age);
     scanf("%s",&hobby);
