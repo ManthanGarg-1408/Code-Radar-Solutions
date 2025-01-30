@@ -3,7 +3,7 @@ int main() {
     int a,b;
     scnaf("%d %d",&a,&b);
     if (a>b){
-        print("%d",a);
+        printf("%d",a);
     }else{
         printf("%d",b);
     }
