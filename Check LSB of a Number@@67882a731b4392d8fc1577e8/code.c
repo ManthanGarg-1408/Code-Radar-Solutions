@@ -2,7 +2,8 @@
 int main{
     int a;
     scanf("%d",&a);
-    if (a & 1){printf("Set\n");}
+    lsb=a&1;
+    if (lsb==1){printf("Set\n");}
     else{printf("Not Set");}
     return 0;
 }
