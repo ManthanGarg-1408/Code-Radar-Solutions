@@ -4,7 +4,10 @@ int main() {
     char ch;
     scanf("%d %d %c",&a,&b,&ch);
     if (ch=='+'){
-        printf(a+b);
-    }
+        printf("%d",a+b);
+    }else if(ch=='-'){printf("%d",a-b);}
+    else if(ch=='*'){printf("%d",a*b);}
+    else if(ch=='/'){printf("%d",a/b);}
+    else{printf("error");}
     return 0;
 }
