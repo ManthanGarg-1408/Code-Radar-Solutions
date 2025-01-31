@@ -20,8 +20,8 @@ int main() {
     break;
     case 2:
     printf("28\n");
-    return 0;
     break;
     default:
     printf("Invalid month");
+    return 0;
 }
