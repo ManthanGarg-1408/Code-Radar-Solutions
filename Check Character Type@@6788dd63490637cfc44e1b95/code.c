@@ -10,7 +10,7 @@ int main() {
     }else if (isconsonant(a)){
         printf("Consonant");
     }else{
-        printf("SpecialCharacter");
+        printf("Special Character");
     }
     return 0;
 }
