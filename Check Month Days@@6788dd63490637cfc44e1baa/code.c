@@ -1,6 +1,9 @@
 #include <stdio.h>
 int main() {
     int a;
+    int x=31;
+    int y=28;
+    int z=30;
     scanf("%d",&a);
     switch (a):
     case 1:
@@ -10,16 +13,16 @@ int main() {
     case 8:
     case 10:
     case 12:
-    printf(31"\n");
+    printf("%d \n",x);
     break;
     case 4:
     case 6:
     case 9:
     case 11:
-    printf(30"\n");
+    printf("%d \n",z);
     break;
     case 2:
-    printf(28"\n");
+    printf("%d \n",y);
     break;
     default:
     printf("Invalid month");
