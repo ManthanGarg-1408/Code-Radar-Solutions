@@ -1,12 +1,11 @@
 #include <stdio.h>
 int main() {
     int a;
-    scanf("%d",&a);
     int x=31;
     int y=28;
     int z=30;
     scanf("%d",&a);
-    switch (a):
+    switch (a)
     case 1:
     case 3:
     case 5:
