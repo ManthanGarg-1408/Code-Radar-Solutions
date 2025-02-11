@@ -1,8 +1,17 @@
 #include <stdio.h>
 int main() {
-    int a;
-    scanf("%d",&a);
-    if (a%1==0 && a%a==0){printf("Prime");}
-    else{printf("Not Prime");}
+
+   int num, i, isPrime = 1;  // Flag to check if the number is prime
+
+    // Input the number
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // Check if number is less than or equal to 1
+    if (num <= 1) {
+        isPrime = 0;  // Not a prime number
+    }
+    // Check if number is exactly 2 (the
+
     return 0;
 }
