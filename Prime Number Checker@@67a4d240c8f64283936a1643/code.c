@@ -2,7 +2,7 @@
 
 // Function to check if a number is prime
 int isPrime(int n) {
-    if (n <= 1) return 0; 
+    if (n <= 1) return 0; // Not prime if n is 1 or less
     
     // Check divisibility from 2 to sqrt(n)
     for (int i = 2; i * i <= n; i++) {
@@ -13,16 +13,12 @@ int isPrime(int n) {
 }
 
 int main() {
-    int n;
-    
-    // Taking input
-    scanf("%d", &n);
-
-    // Check prime using function
-    if (isPrime(n))
-        printf("%d is a prime number.\n", n);
-    else
-        printf("%d is not a prime number.\n", n);
-
+    int t;
+    scanf("%d", &t);
+    while (t--) {
+        int num;
+        scanf("%d", &num);
+        printf("%d\n", isPrime(num)); // Print 1 if prime, 0 if not
+    }
     return 0;
 }
