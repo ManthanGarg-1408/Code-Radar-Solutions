@@ -8,6 +8,12 @@ int main(){
         for (int j = 1; j <= N - i; j++) {
             printf(" ");
         }
+        // print stars
+        for (int i=0;i<=N;i++){
+            for (int j=0;j<=N;j++){
+                printf("*");
+            }
+        }
     
     
     
