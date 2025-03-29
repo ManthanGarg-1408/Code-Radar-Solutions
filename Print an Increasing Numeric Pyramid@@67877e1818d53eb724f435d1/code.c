@@ -6,7 +6,7 @@ int main(){
         for (int s=0;s<n-i;s++){
             printf(" ");
     }
-        for (int j=1;j<i;j++){
+        for (int j=1;j<=i+1;j++){
             printf("%d ",j);
         }
         printf("\n");
