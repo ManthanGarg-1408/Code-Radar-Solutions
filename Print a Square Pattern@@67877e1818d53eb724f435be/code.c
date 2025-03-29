@@ -2,13 +2,12 @@
 
 int main() {
     int N;
-    scanf("%d", &N);  // Read the input
-
-    for (int i = 0; i < N; i++) {  // Loop for rows
-        for (int j = 0; j < N; j++) {  // Loop for columns
+    scanf("%d", &N);  
+    for (int i = 0; i < N; i++) {  
+        for (int j = 0; j < N; j++) {  
             printf("* ");
         }
-        printf("\n");  // Move to the next line after each row
+        printf("\n");  
     }
 
     return 0;
