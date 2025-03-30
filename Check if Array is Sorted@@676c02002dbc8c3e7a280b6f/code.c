@@ -19,7 +19,7 @@ int main(){
         scanf("%d",&arr[n]);
     }
     int flag = isSorted(arr,n);
-    if(flag){
+    if(flag==1){
         printf("Sorted");
     }
     if(flag==0){
