@@ -1,39 +1,24 @@
-#include <stdio.h>
+def process_numbers(num_count, numbers):
+    results = []  # This will store our output results
+    
+    # Process each number
+    for number in numbers:
+        # Assuming you're expected to sum the absolute value of digits,
+        # Modify below logic based on specific requirement.
+        abs_num = abs(number)
+        digit_sum = sum(int(digit) for digit in str(abs_num))
+        
+        results.append(digit_sum)
 
-int sumOfDigits(int num) {
-    int sum = 0;
+    return results
 
-    // Calculate the sum of digits
-    while (num > 0) {
-        sum += num % 10;  // Add the last digit to sum
-        num /= 10;        // Remove the last digit
-    }
-    return sum;
-}
+# Input Handling
+num_count = int(input().strip())
+numbers = list(map(int, input().strip().split()))
 
-int main() {
-    int N;
+# Get processed results
+output = process_numbers(num_count, numbers)
 
-    // Read the size of the array
-    scanf("%d", &N);
-
-    int arr[N];
-    int result[N];
-
-    // Read array elements
-    for (int i = 0; i < N; i++) {
-        scanf("%d", &arr[i]);
-    }
-
-    // Calculate sum of digits for each element
-    for (int i = 0; i < N; i++) {
-        result[i] = sumOfDigits(arr[i]);
-    }
-
-    // Output the results
-    for (int i = 0; i < N; i++) {
-        printf("%d ", result[i]);
-    }
-
-    return 0;
-}
+# Print results in the expected format
+for result in output:
+    print(result)
