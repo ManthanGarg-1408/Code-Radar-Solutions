@@ -1,16 +1,39 @@
-// Your code here...
+#include <stdio.h>
 
-#include<stdio.h>
-int main(){
-    int n;int sum=0;
-    scanf("%d",&n);
-    int arr[n];
-    for (int i = 0; i < n; i++) {
+int sumOfDigits(int num) {
+    int sum = 0;
+
+    // Calculate the sum of digits
+    while (num > 0) {
+        sum += num % 10;  // Add the last digit to sum
+        num /= 10;        // Remove the last digit
+    }
+    return sum;
+}
+
+int main() {
+    int N;
+
+    // Read the size of the array
+    scanf("%d", &N);
+
+    int arr[N];
+    int result[N];
+
+    // Read array elements
+    for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
-    for (int j=0;j<n;j++){
-        sum+=arr[j];
+
+    // Calculate sum of digits for each element
+    for (int i = 0; i < N; i++) {
+        result[i] = sumOfDigits(arr[i]);
     }
-    printf("%d",sum);
+
+    // Output the results
+    for (int i = 0; i < N; i++) {
+        printf("%d ", result[i]);
+    }
+
     return 0;
 }
