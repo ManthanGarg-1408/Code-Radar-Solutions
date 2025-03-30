@@ -8,10 +8,10 @@ int isSorted(int arr[],int n){
     }
 }
 int main(){
-    int arr[n],int n;
+    int arr[],int n;
     scanf("%d",&n);
     for (int i=0;i<n;i++){
-        scanf("%d",&n);
+        scanf("%d",&arr[n]);
     }
     if (isSorted(arr,n)){
         printf("Sorted");
