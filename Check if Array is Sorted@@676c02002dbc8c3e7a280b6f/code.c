@@ -18,10 +18,11 @@ int main(){
     for (int i=0;i<n;i++){
         scanf("%d",&arr[n]);
     }
-    if (isSorted(arr,n)){
-        printf("Sorted\n");
+    int flag = isSorted(arr,n);
+    if(flag){
+        printf("Sorted");
     }
-    else{
+    if(flag==0){
         printf("Not Sorted");
     }
 }
