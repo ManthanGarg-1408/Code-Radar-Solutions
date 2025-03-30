@@ -6,13 +6,14 @@ int isSorted(int arr[],int n){
             return 0;
         }
     }
+    return 1;
 }
 
 int main(){
     int n,arr[n];
     scanf("%d",&n);
     for (int i=0;i<n;i++){
-        printf("%d",arr[n]);
+        scanf("%d",7arr[n]);
     }
     if (isSorted(arr,n)){
         printf("Sorted\n");
