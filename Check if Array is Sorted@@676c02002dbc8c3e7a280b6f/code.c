@@ -13,7 +13,7 @@ int main(){
     int n,arr[n];
     scanf("%d",&n);
     for (int i=0;i<n;i++){
-        printf("%d",arr[n]);
+        scanf("%d",&arr[i]);
     }
     if (isSorted(arr,n)){
         printf("Sorted\n");
