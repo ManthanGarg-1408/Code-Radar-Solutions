@@ -2,9 +2,6 @@
 
 int main() {
     int N, even_count = 0, odd_count = 0;
-
-    // Input: the number of elements in the array
-    printf("Enter the number of elements in the array: ");
     scanf("%d", &N);
 
     int arr[N];
