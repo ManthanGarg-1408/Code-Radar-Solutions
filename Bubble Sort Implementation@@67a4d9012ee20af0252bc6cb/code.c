@@ -1,7 +1,5 @@
-// Your code here...
 
-#include<stdio.h>
-void bubblesort(int arr[],int n){
+void bubbleSort(int arr[],int n){
     int swapped;
     for(int i=0;i<n-1;i++){
         swapped = 0;
@@ -23,11 +21,4 @@ void  arrayprint(int arr[],int n){
     for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
-}
-int main(){
-    int arr[] = {4,1,5,2,3,8,0};
-    int n = sizeof(arr)/sizeof(int);
-    bubblesort(arr,n);
-    arrayprint(arr,n);
-    return 0;
 }
