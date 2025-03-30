@@ -10,8 +10,6 @@ void findUnsortedSubarray(int arr[],int n){
                 swapped = 1;
             }
         }
-        if(swapped == 0){
-        }
     }
 }
 
